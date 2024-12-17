@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMELESS Time Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gravitas+One&family=Maiden+Orange&family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <h1 id="logo">Timeless</h1>
+       <nav>
+        <ul id="nav">
+            <li><a href="#hero">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Booking</a></li>
+        </ul>
+       </nav>
+    </header>
+    <main>
+    <article id="hero">
+    <img id="hero-img" src="img/hero.jpg" alt="knight helmet">
+    <div id="hero-txt">
+      <h2 id="hero-h">Ready for your epic adventure?</h2>
+      <p id="hero-p">
+        TIMELESS can bring you back or forward in time! 
+        Meet your ancestors, explore ancient cultures, or find out what waits for us ahead!
+      </p>
+      <button id="book"><a href="#booking">Book now</a></button>
+    </div>
+    </article>
+    <article id="services">
+        <img class="divider" src="img/divider.png">
+        <h3>TIMELESS offers you:</h3>
+        <ul id="service-list">
+            <li>Seamless Time Travel: Experience smooth and safe journeys through the fabric of time.
+            </li>
+            <li>Authentic Immersive Experiences: Walk through ancient cities, witness historic events, or explore futuristic marvels.
+            </li>
+            <li>Personalized Adventures: Choose your destination, era, and storyline for a one-of-a-kind experience.</li>
+            <li>Guided by Experts: Travel alongside historians, cultural specialists, and AI-guided companions.
+            </li>
+            <li>Memories That Last Forever: Bring back keepsakes, virtual souvenirs, and stunning photos of your journey.</li>
+        </ul>
+    </article>
+    <article id="gallery">
+        <img class="divider" src="img/divider.png">
+        <h3>Meet our happy customers</h3>
+        <div id="gallery-pics"><img class="gallery-img" src="img/1.jpeg">
+        <img class="gallery-img" src="img/2.jpeg">
+        <img class="gallery-img" src="img/3.jpeg">
+        <img class="gallery-img" src="img/4.jpeg">
+        <img class="gallery-img" src="img/5.jpeg">
+        <img class="gallery-img" src="img/6.jpeg">
+        </div>
+    </article>
+    <article id="booking">
+        <img class="divider" src="img/divider.png">
+        <h3>Book your journey</h3>
+        <form action="/submit" method="POST">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+            <label for="arrival-date">Arrival Date:</label>
+            <input type="date" id="arrival-date" name="arrival-date" required>
+            <button type="submit">Submit</button>
+    </article>
+    </main>
+    <footer>
+        <p>TIMELESS Time Travels, 2075. All rights reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+body {
+  display: inline;
+  background-color: rgb(17, 9, 5);
+  margin-right: 0%;
+}
+
+#logo {
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(17, 9, 5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: rgb(251, 172, 99, 90%);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(17, 9, 5);
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+
+
+#hero {
+  display: flex;
+  flex-direction: row;
+}
+
+#hero-img {
+  width: 40%; 
+}
+
+#hero-txt {
+    width: 60%;
+    background-color: rgb(17, 9, 5);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+#hero-h {
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: goldenrod;
+    font-size: clamp(1.5rem, 5vw, 5rem);
+  }
+
+  
+#hero-p {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(251, 185, 99);
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+
+#book {
+  background-color: goldenrod;
+  max-width: 15rem;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#book:hover {
+  background-color: rgb(255, 187, 0);
+}
+
+#book a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(17, 9, 5);
+}
+
+.divider {
+  width: 100%;
+}
+
+#services {
+  background-color: rgb(17, 9, 5);
+}
+
+#service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  color: rgb(251, 185, 99);
+}
+
+  #gallery {
+    background-color: rgb(17, 9, 5);
+    padding-bottom: 1rem;
+  }
+
+  #gallery-pics {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0 1rem;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.gallery-img {
+  width: 90%;
+  border-radius: 0.2rem;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  font-family: "Roboto", serif;
+  color: rgb(251, 185, 99);
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: goldenrod;
+  color: rgb(17, 9, 5);;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+form button:hover {
+  background-color: rgb(255, 187, 0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: rgb(251, 185, 99);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+  background-color: rgb(251, 185, 99, 90%);
+  color: rgb(17, 9, 5);
+}
+
+@media only screen and (max-width:420px) {
+  #hero {
+    width: 100%; 
+  }
+  
+  #hero-img {
+      width: 60%;
+}
+
+#hero-txt {
+  width: 40%;
+}
+
+#book {
+  font-size: 0.5rem;
+}
+}
