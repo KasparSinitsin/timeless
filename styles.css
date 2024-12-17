@@ -137,9 +137,9 @@ h3 {
 }
 
 form {
-  max-width: 400px;
+  max-width: 20rem;
   margin: auto;
-  padding: 20px;
+  padding: 1rem;
 }
 
 form label {
